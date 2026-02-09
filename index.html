@@ -12,80 +12,19 @@
       line-height: 1.6;
       color: #333;
     }
-.package-card {
-  background: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
 
-.package-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.package-content {
-  padding: 20px;
-}
-
-.package-content h3 {
-  margin-top: 0;
-  color: #333;
-}
-
-.package-content ul {
-  padding-left: 20px;
-}
-
-.package-content ul li {
-  margin-bottom: 8px;
-}
-
-.packages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-header {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-              url("images/chefchaouen-morocco-blue-1.jpg.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-}
-<section>
-  <h2>✨ Included in All Packages</h2>
-  <div class="features">
-    <div class="box">✈️ Airport pick-up & drop-off (Tangier Airport)</div>
-    <div class="box">🗣️ Professional local guide (English / French / Spanish)</div>
-    <div class="box">🚗 Comfortable private car or bus</div>
-    <div class="box">🏨 Accommodation in traditional Moroccan riads</div>
-    <div class="box">🍽️ Daily Moroccan breakfast & dinner</div>
-    <div class="box">🕌 Visits to old medinas, historical sites & museums</div>
-    <div class="box">☕ Moroccan mint tea in traditional cafés with views</div>
-    <div class="box">👥 Available for 2 to 60 people</div>
-  </div>
-  <p style="text-align:center; margin-top:20px;">
-    💬 Prices depend on the number of travelers.  
-    Please contact us via email or WhatsApp for a personalized quote.
-  </p>
-</section>
-
+    header {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                  url("images/chefchaouen-morocco-blue-1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
     }
 
-    header h1 {
-      font-size: 42px;
-    }
-
-    header p {
-      font-size: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
+    header h1 { font-size: 42px; }
+    header p { font-size: 20px; max-width: 800px; margin: auto; }
 
     .btn {
       display: inline-block;
@@ -109,10 +48,10 @@ header {
       margin-bottom: 40px;
     }
 
-    .features, .tours, .services {
+    .features, .services, .packages-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
 
     .box {
@@ -121,10 +60,25 @@ header {
       border-radius: 8px;
     }
 
-    .price {
-      font-size: 20px;
-      color: #c59d5f;
-      font-weight: bold;
+    .package-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .package-content {
+      padding: 20px;
+    }
+
+    .package-content h3 {
+      margin-top: 0;
     }
 
     footer {
@@ -146,100 +100,80 @@ header {
 
 <header>
   <h1>Discover Northern Morocco the Easy Way</h1>
-  <p>
-    Private travel packages across Northern Morocco with hotels,
-    transport, and guided visits included.
-  </p>
-  <a href="#tours" class="btn">View Our Tours</a>
+  <p>Private travel packages with culture, comfort & authenticity.</p>
+  <a href="#packages" class="btn">View Packages</a>
 </header>
 
 <section>
-  <h2>Why Choose Us</h2>
+  <h2>✨ Included in All Packages</h2>
   <div class="features">
-    <div class="box">Complete travel packages including hotels, transport, and guided visits</div>
-    <div class="box">Local expertise in Northern Morocco</div>
-    <div class="box">Comfortable private transport (car or mini bus)</div>
-    <div class="box">Handpicked hotels for your comfort</div>
-    <div class="box">Transparent pricing per person</div>
+    <div class="box">✈️ Airport pick-up & drop-off (Tangier)</div>
+    <div class="box">🗣️ Professional guide (EN / FR / ES)</div>
+    <div class="box">🚗 Private car or bus</div>
+    <div class="box">🏨 Traditional Moroccan riads</div>
+    <div class="box">🍽️ Moroccan breakfast & dinner</div>
+    <div class="box">🕌 Old medinas, museums & history</div>
+    <div class="box">☕ Mint tea with panoramic views</div>
+    <div class="box">👥 From 2 to 60 people</div>
   </div>
-  <p style="text-align:center">
-    <a href="#contact" class="btn">Plan Your Trip</a>
+  <p style="text-align:center; margin-top:20px;">
+    💬 Prices depend on group size — contact us for a personalized quote.
   </p>
 </section>
 
-<section id="tours">
-  <h2>Tours & Packages</h2>
+<section id="packages">
+  <h2>Our Travel Packages</h2>
 
-  <div class="tours">
+  <div class="packages-grid">
 
-    <div class="box">
-      <h3>4 Days Northern Morocco Discovery</h3>
-      <p class="price">€350 per person</p>
-      <p>
-        Day 1 – Tangier: Airport pickup → City tour → Dinner → Overnight<br>
-        Day 2 – Chefchaouen: Guided visit → Overnight<br>
-        Day 3 – Tetouan: Guided Medina tour → Overnight<br>
-        Day 4 – Tangier: Visit → Airport transfer
-      </p>
-      <p>Included: Accommodation, private transport, professional guide</p>
-      <a href="#contact" class="btn">Book This Tour</a>
+    <div class="package-card">
+      <img src="images/chefchaouen-morocco-blue-2.jpg" alt="Chefchaouen">
+      <div class="package-content">
+        <h3>3 Days – Tangier & Chefchaouen</h3>
+        <ul>
+          <li>Tangier city tour & Asilah</li>
+          <li>Chefchaouen blue city</li>
+          <li>Tetouan evening visit</li>
+        </ul>
+        <a href="#contact" class="btn">Request Price</a>
+      </div>
     </div>
 
-    <div class="box">
-      <h3>5 Days Northern Morocco Explorer</h3>
-      <p class="price">Price on request</p>
-      <p>
-        Tangier → Chefchaouen → Tetouan → Tangier<br>
-        Fully guided experience with accommodation and transport
-      </p>
-      <a href="#contact" class="btn">Book This Tour</a>
+    <div class="package-card">
+      <img src="images/tetouan-medina.jpg" alt="Tetouan">
+      <div class="package-content">
+        <h3>4 Days – Northern Morocco</h3>
+        <ul>
+          <li>Tangier & Asilah</li>
+          <li>Chefchaouen full day</li>
+          <li>Tetouan guided tour</li>
+        </ul>
+        <a href="#contact" class="btn">Request Price</a>
+      </div>
     </div>
 
-    <div class="box">
-      <h3>3 Days Tangier & Chefchaouen Quick Trip</h3>
-      <p class="price">Price on request</p>
-      <p>
-        Day 1 – Tangier city tour<br>
-        Day 2 – Chefchaouen blue city<br>
-        Day 3 – Tangier sightseeing → Airport
-      </p>
-      <a href="#contact" class="btn">Book This Tour</a>
+    <div class="package-card">
+      <img src="images/asilah-morocco.jpg" alt="Asilah">
+      <div class="package-content">
+        <h3>5 Days – Complete Experience</h3>
+        <ul>
+          <li>Tangier city tour</li>
+          <li>Chefchaouen & Asilah</li>
+          <li>Tetouan, Martil & Rincon</li>
+        </ul>
+        <a href="#contact" class="btn">Request Price</a>
+      </div>
     </div>
 
-  </div>
-</section>
-
-<section>
-  <h2>What We Offer</h2>
-  <div class="services">
-    <div class="box">Airport pickup & drop-off</div>
-    <div class="box">Handpicked hotels for all budgets</div>
-    <div class="box">Private cars & mini buses</div>
-    <div class="box">Local professional guides</div>
-    <div class="box">Custom travel planning</div>
-    <div class="box">Full itinerary organization</div>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact & Book Now</h2>
+  <h2>Contact Us</h2>
   <p style="text-align:center">
     📞 WhatsApp: <strong>Click to Chat</strong><br>
-    ✉ Email: info@moroccoeasytravel.com
+    ✉️ Email: info@moroccoeasytravel.com
   </p>
-
-  <form>
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <select>
-      <option>Select Package</option>
-      <option>4 Days Northern Morocco</option>
-      <option>5 Days Explorer</option>
-      <option>3 Days Quick Trip</option>
-    </select>
-    <textarea placeholder="Your Message"></textarea>
-    <button class="btn">Send Message</button>
-  </form>
 </section>
 
 <footer>
